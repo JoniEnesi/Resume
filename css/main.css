@@ -2005,6 +2005,29 @@ input::-moz-focus-inner {
  * # hero
  *
  * ------------------------------------------------------------------- */
+#hero{
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #hero{
+    background-image: url(../images/bg_m.jpg);
+  }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  #hero{
+    background-image: url(../images/bg_s.jpg);
+  }
+
+}
+
+ 
 .s-hero {
   width: 100%;
   height: 100vh;
@@ -2012,6 +2035,9 @@ input::-moz-focus-inner {
   overflow: hidden;
   background-color: transparent;
   position: relative;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .s-hero::before {
